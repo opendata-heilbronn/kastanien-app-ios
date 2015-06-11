@@ -13,6 +13,10 @@
 		3AA3C2A71B2A0B2500AAE47B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C2A61B2A0B2500AAE47B /* Images.xcassets */; };
 		3AA3C2AA1B2A0B2500AAE47B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C2A81B2A0B2500AAE47B /* LaunchScreen.xib */; };
 		3AA3C2B61B2A0B2500AAE47B /* KastanienAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C2B51B2A0B2500AAE47B /* KastanienAppTests.swift */; };
+		3AA3C2C01B2A0FE400AAE47B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3C2BF1B2A0FE400AAE47B /* MapKit.framework */; };
+		3AA3C2C21B2A114500AAE47B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C2C11B2A114500AAE47B /* InfoPlist.strings */; };
+		3AA3C2C81B2A131700AAE47B /* CastaneaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3C2C71B2A131700AAE47B /* CastaneaService.swift */; };
+		3AA3C2CA1B2A138300AAE47B /* Heilbronn.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3C2C91B2A138300AAE47B /* Heilbronn.gpx */; };
 		61D8DC269A4628C4E2E375A0 /* Pods_KastanienApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6864BEF1718A5E302F0B232A /* Pods_KastanienApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,11 @@
 		3AA3C2AF1B2A0B2500AAE47B /* KastanienAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KastanienAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3C2B41B2A0B2500AAE47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA3C2B51B2A0B2500AAE47B /* KastanienAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KastanienAppTests.swift; sourceTree = "<group>"; };
+		3AA3C2BF1B2A0FE400AAE47B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3AA3C2C11B2A114500AAE47B /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		3AA3C2C71B2A131700AAE47B /* CastaneaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastaneaService.swift; sourceTree = "<group>"; };
+		3AA3C2C91B2A138300AAE47B /* Heilbronn.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Heilbronn.gpx; sourceTree = "<group>"; };
+		3AA3C2CC1B2A158D00AAE47B /* KastanienApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KastanienApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		6864BEF1718A5E302F0B232A /* Pods_KastanienApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KastanienApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91010AB79BCD0C89B9A5EE8A /* Pods-KastanienApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KastanienApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KastanienApp/Pods-KastanienApp.release.xcconfig"; sourceTree = "<group>"; };
 		EFF5C106A21E26A4DF9397E8 /* Pods-KastanienApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KastanienApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KastanienApp/Pods-KastanienApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA3C2C01B2A0FE400AAE47B /* MapKit.framework in Frameworks */,
 				61D8DC269A4628C4E2E375A0 /* Pods_KastanienApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,12 +94,15 @@
 		3AA3C29C1B2A0B2500AAE47B /* KastanienApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AA3C2CC1B2A158D00AAE47B /* KastanienApp-Bridging-Header.h */,
+				3AA3C2C91B2A138300AAE47B /* Heilbronn.gpx */,
 				3AA3C29F1B2A0B2500AAE47B /* AppDelegate.swift */,
 				3AA3C2A11B2A0B2500AAE47B /* ViewController.swift */,
 				3AA3C2A31B2A0B2500AAE47B /* Main.storyboard */,
 				3AA3C2A61B2A0B2500AAE47B /* Images.xcassets */,
 				3AA3C2A81B2A0B2500AAE47B /* LaunchScreen.xib */,
 				3AA3C29D1B2A0B2500AAE47B /* Supporting Files */,
+				3AA3C2C71B2A131700AAE47B /* CastaneaService.swift */,
 			);
 			path = KastanienApp;
 			sourceTree = "<group>";
@@ -97,6 +110,7 @@
 		3AA3C29D1B2A0B2500AAE47B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AA3C2C11B2A114500AAE47B /* InfoPlist.strings */,
 				3AA3C29E1B2A0B2500AAE47B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -122,6 +136,7 @@
 		6F5A1F5F65F166E260825E4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AA3C2BF1B2A0FE400AAE47B /* MapKit.framework */,
 				6864BEF1718A5E302F0B232A /* Pods_KastanienApp.framework */,
 			);
 			name = Frameworks;
@@ -188,6 +203,11 @@
 				TargetAttributes = {
 					3AA3C2991B2A0B2500AAE47B = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3AA3C2AE1B2A0B2500AAE47B = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -219,7 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA3C2CA1B2A138300AAE47B /* Heilbronn.gpx in Resources */,
 				3AA3C2A51B2A0B2500AAE47B /* Main.storyboard in Resources */,
+				3AA3C2C21B2A114500AAE47B /* InfoPlist.strings in Resources */,
 				3AA3C2AA1B2A0B2500AAE47B /* LaunchScreen.xib in Resources */,
 				3AA3C2A71B2A0B2500AAE47B /* Images.xcassets in Resources */,
 			);
@@ -287,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA3C2C81B2A131700AAE47B /* CastaneaService.swift in Sources */,
 				3AA3C2A21B2A0B2500AAE47B /* ViewController.swift in Sources */,
 				3AA3C2A01B2A0B2500AAE47B /* AppDelegate.swift in Sources */,
 			);
@@ -370,6 +393,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "KastanienApp/KastanienApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,6 +432,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "KastanienApp/KastanienApp-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -419,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KastanienApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -430,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KastanienApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
