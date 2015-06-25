@@ -33,7 +33,7 @@ class CastaneaService {
                     self.trees = [Tree]()
 
                     var res = response as! NSDictionary
-                    var weatherList = res["list"] as! NSArray
+                    var weatherList = res["trees"] as! NSArray
 
                     for (weatherElement) in weatherList {
                         var element = weatherElement as! NSDictionary;
